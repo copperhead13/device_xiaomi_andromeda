@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libcameraservice \
     Snap
 
 PRODUCT_COPY_FILES += \
