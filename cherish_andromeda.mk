@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 
 # Inherit from andromeda device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_andromeda
+PRODUCT_NAME := cherish_andromeda
 PRODUCT_DEVICE := andromeda
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3 5G
@@ -32,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="andromeda"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=Dragos

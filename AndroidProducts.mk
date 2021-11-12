@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_andromeda.mk
+    $(LOCAL_DIR)/cherish_andromeda.mk
+	
+COMMON_LUNCH_CHOICES := \
+    cherish_andromeda-user \
+    cherish_andromeda-userdebug \
+    cherish_andromeda-eng
