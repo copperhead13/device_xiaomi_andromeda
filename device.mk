@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-service
 
 # Device-specific settings
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     XiaomiParts
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/parts/snd,$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui)
